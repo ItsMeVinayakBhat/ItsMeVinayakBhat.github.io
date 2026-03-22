@@ -15,31 +15,31 @@
   });
 
   const punchlines = [
-    "Currently converting complicated systems into calm architecture and suspiciously good charts.",
-    "Equal parts backend engineer, anomaly hunter, and enemy of unnecessary storage costs.",
-    "Builds APIs, tames data, mentors humans, and occasionally touches grass on treks.",
-    "Some engineers ship features. Some ship clarity. The fun ones try to ship both.",
+    "Focused on turning complex systems into clean architecture and actionable analytics.",
+    "Backend engineering, anomaly detection, and storage optimization — driven by real impact.",
+    "Designing APIs, working with data, mentoring engineers, and building reliable systems.",
+    "Shipping features and clarity in equal measure across every project.",
   ];
 
   const missions = [
-    { title: "Storage whisperer mode", text: "Optimizing data flows, compressing complexity, and making infra bills slightly less dramatic." },
-    { title: "Anomaly detective mode", text: "Looking for signals in noisy systems while side-eyeing dashboards that clearly know something." },
-    { title: "API architect mode", text: "Designing interfaces that make sense on the first read, which should not be a radical concept." },
-    { title: "Mentor mode", text: "Helping newer engineers level up without making the conversation feel like an oral exam." },
+    { title: "Storage optimization", text: "Optimizing data flows, compressing records, and reducing infrastructure costs through better design." },
+    { title: "Anomaly detection", text: "Identifying meaningful signals in noisy systems using ML-backed analysis and time-series models." },
+    { title: "API architecture", text: "Designing well-documented interfaces that are intuitive, durable, and easy to integrate with." },
+    { title: "Mentoring", text: "Helping engineers grow their technical depth through hands-on collaboration and knowledge sharing." },
   ];
 
   const forecasts = [
-    { title: "Today's Vinayak forecast", text: "High chance of solving a backend problem, medium chance of improving architecture, low chance of leaving a TODO unresolved." },
-    { title: "Career climate update", text: "Patchy clouds of complexity with strong bursts of system design. Visibility remains excellent near elegant abstractions." },
-    { title: "Engineering horoscope", text: "The APIs are aligned, the metrics are favorable, and a performance bottleneck should be nervous." },
-    { title: "Operational reading", text: "Today favors analytical thinking, thoughtful trade-offs, and politely refusing bad ideas with data." },
+    { title: "Current focus", text: "Backend system design, data compression strategies, and building analytics capabilities for better observability." },
+    { title: "Technical outlook", text: "Deep work on system architecture paired with practical AI and analytics exploration across projects." },
+    { title: "Engineering priorities", text: "API reliability, performance improvements, and data-driven decision making across the stack." },
+    { title: "Growth areas", text: "Analytical thinking, thoughtful trade-off evaluation, and continued investment in mentoring and team development." },
   ];
 
   const funFacts = [
-    "Fun fact: starting at ISRO is a wildly unfair advantage for making a career sound cinematic.",
-    "Fun fact: reducing storage by 70 percent is what resumes look like after they discover efficiency.",
-    "Fun fact: if a chart became useful under pressure, there is a non-zero chance Vinayak was involved.",
-    "Fun fact: trekking exists so distributed systems do not become the only mountains in life.",
+    "Started his career at ISRO, modeling cyclones and tornadoes for satellite-related testing.",
+    "Led a compression effort at Salesforce that reduced storage consumption by 70 percent.",
+    "Has built analytics tooling, anomaly detection systems, and data visualization pipelines across multiple organizations.",
+    "Outside of work, enjoys trekking and biking — a good counterbalance to deep technical work.",
   ];
 
   function pick(arr) {
@@ -83,7 +83,7 @@
 
   if (surpriseButton && factTitle && factText) {
     surpriseButton.addEventListener("click", () => {
-      factTitle.textContent = "Random fun fact";
+      factTitle.textContent = "Did you know?";
       factText.textContent  = pick(funFacts);
       document.querySelector("[data-fun-panel]")?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
@@ -149,7 +149,7 @@
   if (copyButton) {
     copyButton.addEventListener("click", async () => {
       const pitch =
-        "Vinayak Bhat is a Senior Engineer who builds backend systems, analytics features, and practical AI-powered solutions without the buzzword overload.";
+        "Vinayak Bhat is a Lead Engineer at Salesforce specializing in backend systems, analytics, and AI-powered solutions.";
       try {
         await navigator.clipboard.writeText(pitch);
         copyButton.textContent = "Bio copied";
