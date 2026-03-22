@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinayak Bhat | Projects</title>
+  <meta
+    name="description"
+    content="Projects by Vinayak Bhat — backend services, analytics work, anomaly detection, and practical software experiments."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="nav glass">
+      <div class="brand">
+        <div class="brand-badge">VB</div>
+        <span>Vinayak Bhat</span>
+      </div>
+      <nav class="nav-links" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link active" href="projects.html">Projects</a>
+        <button class="theme-toggle" type="button" data-theme-toggle>Toggle theme</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card page-hero section">
+        <div class="eyebrow">Projects</div>
+        <h1>Things built, tested, explored, or politely wrestled into shape</h1>
+        <p class="lead">
+          This page highlights public project work and the kinds of problems Vinayak tends to enjoy solving:
+          services, APIs, analytics, anomaly detection, and experiments that are actually useful after the demo ends.
+        </p>
+      </section>
+
+      <section class="card section">
+        <h2>Filter by type</h2>
+        <p class="lead">Because even project pages deserve better query support.</p>
+        <div class="chips" data-filter-group="projects">
+          <button class="chip active" type="button" data-filter="all">All</button>
+          <button class="chip" type="button" data-filter="backend">Backend</button>
+          <button class="chip" type="button" data-filter="analytics">Analytics</button>
+          <button class="chip" type="button" data-filter="ai">AI / ML</button>
+          <button class="chip" type="button" data-filter="learning">Learning</button>
+        </div>
+        <div class="grid grid-2">
+          <article class="project-card" data-filter-item="projects" data-tags="backend">
+            <h3>User Management Service</h3>
+            <p>
+              A dockerized user-management service integrated with MySQL. Good example of practical backend work:
+              clean purpose, real interfaces, and no need for a dramatic marketing paragraph.
+            </p>
+            <div class="tags">
+              <span class="tag">Backend</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Docker</span>
+            </div>
+            <div class="links">
+              <a class="button secondary" href="https://github.com/VinayakNBhat/user-management" target="_blank" rel="noreferrer">Open repo</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-filter-item="projects" data-tags="analytics ai">
+            <h3>Data Analytics</h3>
+            <p>
+              Extracts data from JSON files and visualizes it using Python-native packages. Raw data deserves a more
+              interesting life than sitting quietly in files pretending it already told a story.
+            </p>
+            <div class="tags">
+              <span class="tag">Analytics</span>
+              <span class="tag">Python</span>
+              <span class="tag">Visualization</span>
+            </div>
+            <div class="links">
+              <a class="button secondary" href="https://github.com/VinayakNBhat/data-analytics" target="_blank" rel="noreferrer">Open repo</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-filter-item="projects" data-tags="ai analytics">
+            <h3>Anomaly Detection / Propano</h3>
+            <p>
+              Work around network traffic anomalies using models like Facebook Prophet, plus filtering strategies to reduce false positives.
+              This is what happens when "probably fine" is not accepted as a monitoring strategy.
+            </p>
+            <div class="tags">
+              <span class="tag">AI / ML</span>
+              <span class="tag">Anomaly Detection</span>
+              <span class="tag">Time Series</span>
+            </div>
+            <div class="links">
+              <a class="button secondary" href="https://github.com/VinayakNBhat" target="_blank" rel="noreferrer">GitHub profile</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-filter-item="projects" data-tags="backend learning">
+            <h3>Kafka Experiment</h3>
+            <p>
+              A publisher-subscriber demonstration using Kafka in microservices. Small experiments like this are how
+              distributed systems stop being abstract and start becoming habits.
+            </p>
+            <div class="tags">
+              <span class="tag">Backend</span>
+              <span class="tag">Kafka</span>
+              <span class="tag">Microservices</span>
+            </div>
+            <div class="links">
+              <a class="button secondary" href="https://github.com/VinayakNBhat" target="_blank" rel="noreferrer">GitHub profile</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-filter-item="projects" data-tags="learning backend">
+            <h3>Google Guice Examples</h3>
+            <p>
+              A small repo covering different binding styles with Google Guice. Very on-brand if you enjoy reducing confusion
+              one dependency graph at a time.
+            </p>
+            <div class="tags">
+              <span class="tag">Learning</span>
+              <span class="tag">Java</span>
+              <span class="tag">Dependency Injection</span>
+            </div>
+            <div class="links">
+              <a class="button secondary" href="https://github.com/VinayakNBhat" target="_blank" rel="noreferrer">GitHub profile</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-filter-item="projects" data-tags="learning">
+            <h3>LeetCode Solutions</h3>
+            <p>
+              A solid archive of algorithm practice. Not every project needs to be flashy; sometimes disciplined reps are the project.
+            </p>
+            <div class="tags">
+              <span class="tag">Learning</span>
+              <span class="tag">Algorithms</span>
+              <span class="tag">Practice</span>
+            </div>
+            <div class="links">
+              <a class="button secondary" href="https://github.com/VinayakNBhat" target="_blank" rel="noreferrer">GitHub profile</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="split section">
+        <article class="card">
+          <h2>How projects are usually approached</h2>
+          <p class="lead">The unglamorous but effective method.</p>
+          <ul class="list">
+            <li>Start with the actual problem instead of the fanciest tool.</li>
+            <li>Prefer useful architecture over clever architecture.</li>
+            <li>Make observability and maintainability part of the first draft.</li>
+            <li>Leave enough clarity behind that the next engineer does not need detective training.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>Want more?</h2>
+          <p class="lead">The rest of the internet is standing by.</p>
+          <div class="callout">
+            <strong>External links</strong>
+            <p>
+              For the full public trail, LinkedIn and GitHub are still the best places to browse ongoing work,
+              experiments, and career context.
+            </p>
+          </div>
+          <div class="hero-actions" style="margin-top: 22px;">
+            <a class="button secondary" href="https://github.com/VinayakNBhat" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button secondary" href="https://www.linkedin.com/in/vbhat1/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      Vinayak Bhat &middot; Built with clean code, no buzzword inflation.
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
